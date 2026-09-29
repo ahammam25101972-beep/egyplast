@@ -180,14 +180,44 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>
             جميع الحقوق محفوظة © {new Date().getFullYear()} شركة إيجي بلاست (Egy Plast) - العلامة التجارية هوم بلاست ® (Home Plast ®).
           </p>
 
+          {/* Designer and Idea Credits */}
+          <div className="flex flex-wrap items-center justify-center gap-2 text-xs py-1.5 px-3 rounded-xl bg-slate-800/60 border border-white/10 text-slate-300 shadow-sm">
+            <span className="flex items-center gap-1.5">
+              <span>تصميم :</span>
+              <span className="font-bold text-white">أحمد همام</span>
+              <a
+                href="tel:01205132328"
+                className="font-mono text-cyan-400 font-semibold hover:underline"
+                dir="ltr"
+              >
+                01205132328
+              </a>
+            </span>
+
+            <span className="text-slate-500 font-bold px-1">|</span>
+
+            <span className="flex items-center gap-1.5">
+              <span>فكرة :</span>
+              <a
+                href="https://www.facebook.com/profile.php?id=61582844093225"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-amber-400 hover:text-amber-300 hover:underline transition-colors flex items-center gap-1"
+                title="صفحة فكرة اليوم تطبيق الغد على فيسبوك"
+              >
+                <span>فكرة اليوم تطبيق الغد</span>
+              </a>
+            </span>
+          </div>
+
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-white/10 transition-colors"
+            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-white/10 transition-colors cursor-pointer"
           >
             <span>العودة للأعلى</span>
             <ArrowUp className="w-3.5 h-3.5" />
