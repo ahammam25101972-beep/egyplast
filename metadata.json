@@ -1,0 +1,6 @@
+{
+  "name": "هوم بلاست | HomePlast - حلول ومنتجات السباكة المتطورة",
+  "description": "الموقع الرسمي لشركة هوم بلاست الرائدة في توريد وتركيب أحدث أنظمة ومنتجات السباكة بجودة عالمية وضمان حقيقي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
