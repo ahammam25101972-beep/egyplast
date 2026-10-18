@@ -2,12 +2,13 @@ import React from 'react';
 import { ThemeProvider, useTheme } from './context/ThemeContext.tsx';
 import { Navbar } from './components/Navbar.tsx';
 import { HeroSection } from './components/HeroSection.tsx';
+import { AboutSection } from './components/AboutSection.tsx';
 import { ServicesSection } from './components/ServicesSection.tsx';
 import { ProductsShowcase } from './components/ProductsShowcase.tsx';
 import { PlumbingCostCalculator } from './components/PlumbingCostCalculator.tsx';
-import { AboutSection } from './components/AboutSection.tsx';
 import { ProjectsSection } from './components/ProjectsSection.tsx';
 import { ContactSection } from './components/ContactSection.tsx';
+import { BlogSection } from './components/BlogSection.tsx';
 import { Footer } from './components/Footer.tsx';
 import { FloatingActions } from './components/FloatingActions.tsx';
 
@@ -27,34 +28,37 @@ function MainApp() {
           : 'bg-slate-50 text-slate-900 selection:bg-cyan-500/25 selection:text-cyan-800'
       }`}
     >
-      {/* Top Bar Navigation */}
+      {/* Top Bar Navigation (الرئيسية - من نحن - خدماتنا - منتجاتنا - حاسبة التكلفة - اتصل بنا - المدونة) */}
       <Navbar onOpenConsultation={() => scrollToSection('contact')} />
 
-      {/* Main Content Flow */}
+      {/* Main Content Flow Ordered to Match Navigation */}
       <main className="flex-1">
-        {/* Hero Section with Interactive Plumbing Simulator */}
+        {/* 1. الرئيسية: Hero Section with Interactive Plumbing Simulator */}
         <HeroSection
           onOpenCalculator={() => scrollToSection('calculator')}
           onOpenProducts={() => scrollToSection('products')}
         />
 
-        {/* Core Capabilities and Plumbing Advantages */}
+        {/* 2. من نحن: About Homeplast / Egy Plast Official Profile */}
+        <AboutSection />
+
+        {/* 3. خدماتنا: Core Capabilities and Plumbing Advantages */}
         <ServicesSection />
 
-        {/* Interactive Products Showcase & Technical Specs */}
+        {/* 4. منتجاتنا: Interactive Products Showcase & Technical Specs */}
         <ProductsShowcase />
 
-        {/* Instant Plumbing Cost & Materials Estimator */}
+        {/* 5. حاسبة التكلفة: Instant Plumbing Cost & Materials Estimator */}
         <PlumbingCostCalculator />
-
-        {/* About HomePlast & Technical Comparison */}
-        <AboutSection />
 
         {/* Case Studies, Major Projects & Verified Testimonials */}
         <ProjectsSection />
 
-        {/* Contact Form & Emergency Technical Support */}
+        {/* 6. اتصل بنا: Contact Form, Factory, Head Office & Branches Directory */}
         <ContactSection />
+
+        {/* 7. المدونة: Engineering Blog, Guides & Lab Research */}
+        <BlogSection />
       </main>
 
       {/* Footer */}
