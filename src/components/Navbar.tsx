@@ -22,11 +22,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
 
   const navLinks = [
     { label: 'الرئيسية', href: '#hero' },
+    { label: 'من نحن', href: '#about' },
     { label: 'خدماتنا', href: '#services' },
     { label: 'منتجاتنا', href: '#products' },
     { label: 'حاسبة التكلفة', href: '#calculator' },
-    { label: 'من نحن', href: '#about' },
     { label: 'اتصل بنا', href: '#contact' },
+    { label: 'المدونة', href: '#blog' },
   ];
 
   return (

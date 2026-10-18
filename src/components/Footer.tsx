@@ -176,7 +176,23 @@ export const Footer: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
 
+        {/* Navigation Bar in Footer */}
+        <div className="py-6 border-b border-white/10 flex flex-wrap items-center justify-center gap-y-2 gap-x-6 text-xs font-semibold">
+          <a href="#hero" className="text-slate-300 hover:text-cyan-400 transition-colors">الرئيسية</a>
+          <span className="text-slate-600">·</span>
+          <a href="#about" className="text-slate-300 hover:text-cyan-400 transition-colors">من نحن</a>
+          <span className="text-slate-600">·</span>
+          <a href="#services" className="text-slate-300 hover:text-cyan-400 transition-colors">خدماتنا</a>
+          <span className="text-slate-600">·</span>
+          <a href="#products" className="text-slate-300 hover:text-cyan-400 transition-colors">منتجاتنا</a>
+          <span className="text-slate-600">·</span>
+          <a href="#calculator" className="text-slate-300 hover:text-cyan-400 transition-colors">حاسبة التكلفة</a>
+          <span className="text-slate-600">·</span>
+          <a href="#contact" className="text-slate-300 hover:text-cyan-400 transition-colors">اتصل بنا</a>
+          <span className="text-slate-600">·</span>
+          <a href="#blog" className="text-red-400 hover:text-red-300 transition-colors">المدونة</a>
         </div>
 
         {/* Bottom Bar */}
